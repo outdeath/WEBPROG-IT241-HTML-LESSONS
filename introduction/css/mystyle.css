@@ -20,7 +20,7 @@ ul {
 }
 
 .borderimg {
-  border: 17px solid transparent; /* Required for border-image */
+  border: 17px solid; /* Required for border-image */
   padding: 15px;
   border-width: 20px;
   background-color: white;
