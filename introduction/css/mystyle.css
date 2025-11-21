@@ -20,7 +20,7 @@ ul {
 }
 
 .borderimg {
-  border: 10px solid transparent; /* Required for border-image */
-  padding: 15px;
+  border: 17px solid fill white; /* Required for border-image */
+  padding: 20px;
   border-image: url(https://files.catbox.moe/9pbim6.png) 30% round;
 }
