@@ -7,8 +7,10 @@ h1 {
   margin-left: 20px;
 }
 
-p{
+body{
   color: #b04869;
   text-align: center;
-
+li{
+  color: #b04869;
+}
 }
