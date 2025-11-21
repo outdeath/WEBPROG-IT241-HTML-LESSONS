@@ -13,7 +13,6 @@ body{
   border: 5px solid black; /* Example: 5px solid black border */
   margin: 0; /* Remove default body margin */
   padding: 0; /* Remove default body padding */
-  p.solid {border-style: solid;}
 li{
   color: #b04869;
 }
