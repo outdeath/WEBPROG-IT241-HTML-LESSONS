@@ -3,6 +3,10 @@ body {
 }
 
 h1 {
-  color: navy;
+  color: #70283f;
   margin-left: 20px;
+}
+
+p{
+  color: #b04869;
 }
