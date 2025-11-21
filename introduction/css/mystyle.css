@@ -9,10 +9,11 @@ h1 {
 
 body{
   color: #b04869;
-  text-align: center;
-  border: 5px solid black; /* Example: 5px solid black border */
-  margin: 0; /* Remove default body margin */
-  padding: 0; /* Remove default body padding */
+  text-align: justify, center;
+  border: 4px solid black; /* Example: 5px solid black border */
+  margin: 1px; /* Remove default body margin */
+  padding: 1px; /* Remove default body padding */
+  border-width: 5px;
 li{
   color: #b04869;
 }
