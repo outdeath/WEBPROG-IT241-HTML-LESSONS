@@ -14,7 +14,13 @@ body{
 li{
   color: #b04869;
 }
-}
+
 ul {
   text-align: center; /* Centers the text content of list items */
+}
+
+.borderimg {
+  border: 10px solid transparent; /* Required for border-image */
+  padding: 15px;
+  border-image: url(https://files.catbox.moe/9pbim6.png) 30% round;
 }
