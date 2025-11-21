@@ -14,3 +14,6 @@ li{
   color: #b04869;
 }
 }
+ul {
+  text-align: center; /* Centers the text content of list items */
+}
