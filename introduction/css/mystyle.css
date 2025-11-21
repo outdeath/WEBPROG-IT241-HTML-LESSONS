@@ -23,6 +23,7 @@ ul {
   border: 17px solid; /* Required for border-image */
   padding: 15px;
   border-width: 20px;
-  background-color: white;
+  background-color: #fbf9f6;
+  border-radius: 19px;
   border-image: url(https://files.catbox.moe/9pbim6.png) 30% round;
 }
