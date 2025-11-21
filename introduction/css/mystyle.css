@@ -14,6 +14,10 @@ body{
   margin: 1px; /* Remove default body margin */
   padding: 1px; /* Remove default body padding */
   border-width: 5px;
+  .justified-text {
+  text-align: justify;
+  text-align-last: center; /* Centers the last line of justified text */
+}
 li{
   color: #b04869;
 }
