@@ -2,9 +2,13 @@ body{
     background-color: black;
     color: white
 }
+
+/*header*/
 h1 {
   text-align: center;
+  text-shadow: 0 0 21px #FF0000;
 }
+
 .container {
   display: flex;
   flex-wrap: wrap;
