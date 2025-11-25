@@ -1,7 +1,8 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  background-color: DodgerBlue;
+  background-color: #90cfe8;
+  justify-content: center;
 }
 
 .container div {
