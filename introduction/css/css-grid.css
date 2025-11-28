@@ -12,3 +12,14 @@
     font-size: 20px;
     text-align: center;
 }
+
+div.scroll-container {
+  background-color: #ffff;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
