@@ -30,3 +30,8 @@ div.scroll-container {
 h1{
     text-align: center;
 }
+
+.sticker{
+  float: left;
+  width: 30%;
+}
