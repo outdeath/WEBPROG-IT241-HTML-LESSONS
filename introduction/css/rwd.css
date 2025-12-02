@@ -5,6 +5,8 @@
 body {
   font-family: "Lucida Sans", sans-serif;
   font-size: 17px;
+  background-image: https://cdn.vectorstock.com/i/500p/97/34/brown-and-beige-tartan-plaid-vector-20629734.jpg;
+
 }
 
 .grid-container {
@@ -21,9 +23,10 @@ body {
 
 .header {
   grid-area: header;
-  background-color: purple;
+  background-color: beige;
+  border: 4px double #916a4c;
   text-align: center;
-  color: #ffffff;
+  color: #000;
 }
 
 .header > h1 {
@@ -43,12 +46,13 @@ body {
 .menu li {
   padding: 8px;
   margin-bottom: 7px;
-  background-color: #33b5e5;
+  background-color: #bf7b50;
+  border: 4px double #1f150f;
   color: #ffffff;
 }
 
 .menu li:hover {
-  background-color: #0099cc;
+  background-color: #6e452c;
 }
   
 .content {
@@ -57,32 +61,34 @@ body {
 
 .content > h1 {
   font-size: 30px;
-  margin-bottom: 7px;
+  margin-bottom: 27px;
 }
 
 .content > p {
-  margin-bottom: 7px;
+  margin-bottom: 30px;
 }
 
 .facts {
   grid-area: facts;
-  border: 1px solid #0099cc;
+  border: 4px double #916a4c;
   background-color: beige;
   padding: 10px;
+  text-align: justify;
 }
 
 .facts > h2 {
-  font-size: 20px;
+  font-size: 23px;
 }
 
 .facts li {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .footer {
   grid-area: footer;
-  background-color: #0099cc;
-  color: #ffffff;
+  background-color: beige;
+  color: #000000;
+  border: 4px double #916a4c;
   text-align: center;
 }
 
