@@ -1,19 +1,22 @@
 body{
-  background-image: ("https://i.pinimg.com/originals/90/9e/25/909e25893881b145777c4c02b69a788a.gif");
+  background-image: url("https://i.pinimg.com/originals/90/9e/25/909e25893881b145777c4c02b69a788a.gif");
+  background-size:cover;
+  background-repeat:round;
+  background-attachment:fixed;
+  color: #822331;
 }
 .container {
   display: grid;
-  gap: 40px 40px;
+  gap: 20px 20px;
   grid-template-columns: auto auto auto;
-  background-color: white;
-  padding: 10px;
+  padding: 1px;
 }
 
 .container div {
-  background-color: #f1f1f1;
-  border: 2px solid #de5267;
-  padding: 20px;
-  font-size: 20px;
+  background-color: #ffff;
+  border: 6px ridge #de5267;
+  padding: 27px;
+  font-size: 21px;
   text-align: center;
 }
 
@@ -24,11 +27,6 @@ div.scroll-container {
   padding: 10px;
 }
 
-div.scroll-container img {
-  padding: 10px;
-}
-
 h1{
     text-align: center;
 }
-
