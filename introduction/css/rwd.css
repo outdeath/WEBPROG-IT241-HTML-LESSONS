@@ -43,7 +43,8 @@ body {
 }
 
 .menu li {
-  padding: 8px;
+  padding: 6px;
+  margin-right: 50px;
   margin-bottom: 7px;
   background-color: #bf7b50;
   border: 4px double #1f150f;
