@@ -1,5 +1,5 @@
 body{
-  background-image: "https://i.pinimg.com/originals/90/9e/25/909e25893881b145777c4c02b69a788a.gif";
+  background-image: ("https://i.pinimg.com/originals/90/9e/25/909e25893881b145777c4c02b69a788a.gif");
 }
 .container {
   display: grid;
@@ -11,7 +11,7 @@ body{
 
 .container div {
   background-color: #f1f1f1;
-  border: 1px solid black;
+  border: 2px solid #de5267;
   padding: 20px;
   font-size: 20px;
   text-align: center;
@@ -32,10 +32,3 @@ h1{
     text-align: center;
 }
 
-.color-grid{
-  display: grid;
-  grid-template-columns: repeat(autofill, minmax(150px, 1fr));
-  gap: 10px;
-  padding: 10px;
-  width: 100%;
-}
