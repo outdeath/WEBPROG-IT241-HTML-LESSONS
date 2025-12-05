@@ -1,0 +1,9 @@
+.box{
+    border-style: ridge;
+    outline-width: 3px black ;
+}
+body{
+    align-content: center;
+    color: white;
+    background-color: black;
+}
