@@ -1,33 +1,36 @@
 body {
    margin: 0;
-   background: #e3b3b3 url('pattern.png'); /* placeholder */
-   font-family: Arial, sans-serif;
-   color: #f7f0f0;
+   background-image: url('https://media.istockphoto.com/id/1195720292/vector/black-and-brown-scottish-tartan-plaid-textile-pattern.jpg?s=612x612&w=0&k=20&c=ahnYrcs4aCG1gzPXGt6Mf3KDnNX0sAl_n-M1AGTv9sg=');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: #000;
  }
  .wrapper {
    width: 960px;
    margin: 0 auto;
-   background: #fff;
-   border: 4px solid #c44;
+   background: #e6c2aa;
+   border: 7px ridge #42271d;
  }
  header {
-   background: #cc0000;
+   background: #804632;
    padding: 20px;
-   color: #fff;
+   color: #fae2d9;
    text-align: center;
-   border-bottom: 4px solid #900;
+   border-bottom: 3px solid #42271d;
  }
  nav {
-   background: #f7d7d7;
+   background: #9e6955;
    padding: 10px;
-   border-bottom: 2px solid #c44;
+   border-bottom: 3px solid #42271d;
    display: flex;
    justify-content: center;
    gap: 15px;
  }
  nav a {
    text-decoration: none;
-   color: #900;
+   color: #fae2d9;
    font-weight: bold;
  }
  .content {
@@ -37,13 +40,13 @@ body {
    padding: 15px;
  }
  .box {
-   background: #fff;
-   border: 2px solid #c44;
+   background: #fae2d9;
+   border: 3px solid #784532;
    padding: 10px;
  }
  .title {
-   background: #cc0000;
-   color: white;
+   background: #915944;
+   color: #fae2d9;
    padding: 5px;
    font-size: 14px;
    font-weight: bold;
@@ -52,8 +55,8 @@ body {
  footer {
    text-align: center;
    padding: 15px;
-   background: #f7d7d7;
-   border-top: 3px solid #c44;
+   background: #ba8e7d;
+   border-top: 3px solid #42271d;
    margin-top: 20px;
    font-size: 13px;
  }
