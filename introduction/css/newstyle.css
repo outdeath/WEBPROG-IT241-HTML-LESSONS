@@ -1,9 +1,59 @@
-.box{
-    border-style: ridge;
-    outline-width: 3px black ;
-}
-body{
-    align-content: center;
-    color: white;
-    background-color: black;
-}
+body {
+   margin: 0;
+   background: #e3b3b3 url('pattern.png'); /* placeholder */
+   font-family: Arial, sans-serif;
+   color: #333;
+ }
+ .wrapper {
+   width: 960px;
+   margin: 0 auto;
+   background: #fff;
+   border: 4px solid #c44;
+ }
+ header {
+   background: #cc0000;
+   padding: 20px;
+   color: #fff;
+   text-align: center;
+   border-bottom: 4px solid #900;
+ }
+ nav {
+   background: #f7d7d7;
+   padding: 10px;
+   border-bottom: 2px solid #c44;
+   display: flex;
+   justify-content: center;
+   gap: 15px;
+ }
+ nav a {
+   text-decoration: none;
+   color: #900;
+   font-weight: bold;
+ }
+ .content {
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   gap: 10px;
+   padding: 15px;
+ }
+ .box {
+   background: #fff;
+   border: 2px solid #c44;
+   padding: 10px;
+ }
+ .title {
+   background: #cc0000;
+   color: white;
+   padding: 5px;
+   font-size: 14px;
+   font-weight: bold;
+   margin-bottom: 8px;
+ }
+ footer {
+   text-align: center;
+   padding: 15px;
+   background: #f7d7d7;
+   border-top: 3px solid #c44;
+   margin-top: 20px;
+   font-size: 13px;
+ }
