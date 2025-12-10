@@ -2,7 +2,7 @@ body {
    margin: 0;
    background: #e3b3b3 url('pattern.png'); /* placeholder */
    font-family: Arial, sans-serif;
-   color: #333;
+   color: #f7f0f0;
  }
  .wrapper {
    width: 960px;
