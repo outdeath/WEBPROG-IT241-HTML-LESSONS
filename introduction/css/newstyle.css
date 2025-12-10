@@ -66,11 +66,10 @@ footer {
 
 /*for the gallery part*/
 .gallery-box {
-    width: 100%;
     background: #f5d7c9;
-    border: 2px solid #57342c;
+    border: 3px solid #57342c;
     padding: 15px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 /* Title styling (same as your other title bars) */
@@ -79,7 +78,7 @@ footer {
     color: white;
     padding: 5px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .gallery-box img {
