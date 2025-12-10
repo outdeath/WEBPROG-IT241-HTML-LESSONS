@@ -64,19 +64,26 @@ footer {
   font-size: 13px;
 }
 
-.image-box {
-  width: 100%;
-  height: 200px;
-  background: #f5d7c9;
-  border: 2px solid #c44;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
+/*for the gallery part*/
+.gallery-box {
+    width: 100%;
+    background: #f5d7c9;
+    border: 2px solid #57342c;
+    padding: 15px;
+    margin-top: 10px;
 }
 
-.image-box img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
+/* Title styling (same as your other title bars) */
+.gallery-box .title {
+    background: #7a4a3a;
+    color: white;
+    padding: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.gallery-box img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #57342c;
 }
