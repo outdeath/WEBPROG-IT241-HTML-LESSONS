@@ -52,8 +52,8 @@ html, body {
    to disable scrolling for the image area)
    ------------------------------------------- */
 
-.avatar-box { min-height: 120px; overflow: visible; }
-.avatar-box img { display: block; width: 100%; height: auto; object-fit: contain; }
+.box avatar-box { min-height: 120px; overflow: visible; }
+.box avatar-box img { display: block; width: 100%; height: auto; object-fit: contain; }
 
 
 /* Optional: keep links tile behavior normal */
