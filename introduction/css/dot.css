@@ -28,10 +28,8 @@ html, body {
 .intro-box,
 .interests-box,
 .contact-box {
-  /* Fixed height so scrolling is possible */
-  max-height: 220px;               /* tweak to match your exact visual */
-  overflow: auto;                   /* enables scrolling */
-  overscroll-behavior: contain;     /* prevent parent scroll chaining */
+  max-height: 220px;   /* fixed viewport */
+  overflow: auto;      /* scrolling enabled */
 }
 
 /* Hide the scrollbar but keep scrolling working */
@@ -53,16 +51,10 @@ html, body {
    (specific part to change if you ever need
    to disable scrolling for the image area)
    ------------------------------------------- */
-.avatar-box {
-  /* REMOVE or do NOT set max-height/overflow: auto for this tile */
-  max-height: none;                 /* ensures full content shows */
-  overflow: hidden;                 /* prevents scrollbars for the image */
-}
-.avatar-box img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+
+.avatar-box { min-height: 120px; overflow: visible; }
+.avatar-box img { display: block; width: 100%; height: auto; object-fit: contain; }
+
 
 /* Optional: keep links tile behavior normal */
 .links-box {
