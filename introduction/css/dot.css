@@ -5,6 +5,9 @@ html, body {
   font-size: 14px;
   line-height: 1.45;
   margin: 0;
+  background-image: url("https://i.pinimg.com/1200x/97/88/7a/97887a74a53dcae56d6b48fd0353d227.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Panel and grid (keep your current sizing) */
