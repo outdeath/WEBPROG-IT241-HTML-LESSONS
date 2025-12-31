@@ -6,6 +6,8 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   background: url("https://images7.alphacoders.com/678/thumb-1920-678078.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .menu-bar {
