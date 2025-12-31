@@ -1,20 +1,11 @@
-/* ===============================
-   GLOBAL RESET
-================================ */
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background: url("assets/paper-texture.jpg");
-  font-family: "Playfair Display", serif;
-  color: #4b3b2a;
-}
-
-body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: url("https://images7.alphacoders.com/678/thumb-1920-678078.jpg");
 }
 
 .menu-bar {
