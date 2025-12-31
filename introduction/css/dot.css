@@ -12,6 +12,69 @@ body {
   color: #4b3b2a;
 }
 
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  color: #000;
+  padding: 4px 12px;
+  height: 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.menu-left, .menu-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menu-left span, .menu-right span {
+  font-size: 13px;
+  cursor: default;
+}
+
+.apple-logo {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.icon {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.wifi {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3c/WiFi_Icon.svg');
+}
+
+.battery {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3b/Battery_icon.svg');
+}
+
+.spotlight {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5f/Magnifying_glass_icon.svg');
+}
+
+.time {
+  font-size: 13px;
+}
+
+
 /* ===============================
    PAGE FRAME
 ================================ */
@@ -67,11 +130,10 @@ body {
 }
 
 /* RIGHT PANEL */
-/* GAP BETWEEN ARTICLE AND SIDEBAR */
 .right-panel {
-  width: 55%;
+  width: 59%;
+  padding-left: 15px;
   display: flex;
-  gap: 28px;
 }
 
 /* ===============================
@@ -102,18 +164,18 @@ body {
    SIDEBAR
 ================================ */
 .sidebar {
-  width: 40%;
+  width: 50%;
 }
 
 .box {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .box h3 {
   font-size: 14px;
   text-transform: uppercase;
-  border-bottom: 1px solid #b59c77;
-  padding-bottom: 4px;
+  border-bottom: 2px solid #b59c77;
+  padding-bottom: 5px;
 }
 
 .box img {
@@ -134,6 +196,7 @@ body {
   max-height: 260px;
   overflow-y: auto;
   padding-right: 10px;
+  margin: 9px;
 }
 
 /* smaller scroll container */
@@ -211,11 +274,11 @@ footer nav a {
   padding-right: 10px;
 
   scrollbar-width: none;      
-  -ms-overflow-style: none; 
+  -ms-overflow-style: none;    
 }
 
 .scroll-box::-webkit-scrollbar {
-  display: none;      
+  display: none;          
 }
 
 /* SIDEBAR FIX */
