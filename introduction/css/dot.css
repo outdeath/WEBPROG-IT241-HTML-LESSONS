@@ -139,52 +139,12 @@ body {
   height: 100%;
   object-fit: cover;
 }
-.search {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  background: #fff;
-  border-radius: 999px;
-  padding: 8px 12px;
-  box-shadow: var(--shadow);
-}
-.search input {
-  border: none;
-  outline: none;
-  width: 300px;
-}
-.search button {
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 999px;
-}
 
-.content {
-  padding: 12px;
-  display: grid;
-  gap: 12px;
-}
-
-.bio-row, .prefs div, .thumb-strip, .social {
+.prefs div, .thumb-strip, .social {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 10px;
-}
-
-.bio-row {
-  display: grid;
-  grid-template-columns: 140px 1fr;
-  gap: 12px;
-}
-.bio-avatar {
-  width: 100%;
-  border-radius: 6px;
-  object-fit: cover;
 }
 
 .prefs {
@@ -295,8 +255,8 @@ body {
 }
 
 .scroll-box {
-  border: 2px solid #b31d1d; /* Red border as per your drawing */
-  border-radius: 8px;
+  border: 2px solid #cfcfcf; /* Red border as per your drawing */
+  border-radius: 4px;
   padding: 10px;
   font-size: 14px;
   background: white;
@@ -305,11 +265,11 @@ body {
 
 /* Fixed heights to trigger the scrollbar */
 .bio-box {
-  height: 80px;
+  height: 90px;
 }
 
 .extra-box {
-  height: 60px;
+  height: 90px;
 }
 
 /* Custom thin scrollbar */
