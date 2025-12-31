@@ -1,27 +1,75 @@
-/* =========================================
-   FONT SETTINGS (matches reference style)
-   ========================================= */
-html, body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif; /* clean, compact sans */
-  font-size: 14px; /* small readable size like the screenshot */
-  line-height: 1.45; /* balanced spacing */
-  color: #222; /* dark gray text for readability */
-}
 
-
-/* =========================================
-   FONT + BASE
-   - Using a compact sans stack for the look
-   ========================================= */
+/* Base font (same stack you’re using) */
 html, body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif; /* exact-feel compact sans */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 14px;
-  color: #222;
-  background: #000; /* fallback while bg loads */
-  height: 100%;
-  margin: 0;
   line-height: 1.45;
+  margin: 0;
 }
+
+/* Panel and grid (keep your current sizing) */
+.panel { max-width: 760px; margin: 24px auto; background:#fff; border:1px solid #cfcfcf; }
+.grid { display:grid; grid-template-columns:240px 1fr; }
+.left-col, .right-col { display:grid; }
+
+/* -------------------------------------------
+   UNIVERSAL SCROLL BOX UTILITY
+   - Apply this pattern to the red boxes
+   ------------------------------------------- */
+.box {
+  padding: 10px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+/* Make specific boxes scrollable (the ones you circled in red) */
+.intro-box,
+.interests-box,
+.contact-box {
+  /* Fixed height so scrolling is possible */
+  max-height: 220px;               /* tweak to match your exact visual */
+  overflow: auto;                   /* enables scrolling */
+  overscroll-behavior: contain;     /* prevent parent scroll chaining */
+}
+
+/* Hide the scrollbar but keep scrolling working */
+/* --- Firefox --- */
+.intro-box,
+.interests-box,
+.contact-box {
+  scrollbar-width: none;            /* hides scrollbar in Firefox */
+}
+/* --- Chromium/WebKit (Chrome, Edge, Safari) --- */
+.intro-box::-webkit-scrollbar,
+.interests-box::-webkit-scrollbar,
+.contact-box::-webkit-scrollbar {
+  display: none;                    /* hides scrollbar track/thumb */
+}
+
+/* -------------------------------------------
+   IMAGE TILE: REMOVE SCROLLING
+   (specific part to change if you ever need
+   to disable scrolling for the image area)
+   ------------------------------------------- */
+.avatar-box {
+  /* REMOVE or do NOT set max-height/overflow: auto for this tile */
+  max-height: none;                 /* ensures full content shows */
+  overflow: hidden;                 /* prevents scrollbars for the image */
+}
+.avatar-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Optional: keep links tile behavior normal */
+.links-box {
+  max-height: 220px;                /* if you want this tile scrollable */
+  overflow: auto;
+}
+/* Hide scrollbar in the links tile (optional) */
+.links-box { scrollbar-width: none; }
+.links-box::-webkit-scrollbar { display: none; }
+
 
 /* =========================================
    PAGE BACKGROUND (classroom image)
@@ -30,7 +78,7 @@ html, body {
 .page-bg {
   position: fixed;
   inset: 0;
-  background: url('https://i.imgur.com/wbqQwzD.jpeg') center/cover no-repeat;
+  background: url('https://i.pinimg.com/1200x/97/88/7a/97887a74a53dcae56d6b48fd0353d227.jpg') center/cover no-repeat;
   z-index: -1; /* keep behind everything */
 }
 
