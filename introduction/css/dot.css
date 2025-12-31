@@ -1,283 +1,135 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  background: url("https://images7.alphacoders.com/678/thumb-1920-678078.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.menu-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #f8f8f8;
-  color: #000;
-  padding: 4px 12px;
-  height: 24px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 999;
-  border-bottom: 1px solid #ccc;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-}
-
-.menu-left, .menu-right {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.menu-left span, .menu-right span {
-  font-size: 13px;
-  cursor: default;
-}
-
-.apple-logo {
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.icon {
-  width: 14px;
-  height: 14px;
-  display: inline-block;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.wifi {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3c/WiFi_Icon.svg');
-}
-
-.battery {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3b/Battery_icon.svg');
-}
-
-.spotlight {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5f/Magnifying_glass_icon.svg');
-}
-
-.time {
-  font-size: 13px;
+/* =========================================
+   FONT SETTINGS (matches reference style)
+   ========================================= */
+html, body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* clean, compact sans */
+  font-size: 14px; /* small readable size like the screenshot */
+  line-height: 1.45; /* balanced spacing */
+  color: #222; /* dark gray text for readability */
 }
 
 
-
-
-:root {
-  --bg: #e9e9e9;
-  --window: #f5f5f5;
-  --border: #cfcfcf;
-  --nav-bg: #e6edf3;
-  --nav-text: #356c9b;
-  --text: #333;
-  --accent: #4a90e2;
-  --like-bg: #dff5e2;
-  --warn-bg: #ffe4e4;
-  --card: #fff;
-  --shadow: 0 2px 8px rgba(0,0,0,0.15);
-  --radius: 8px;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-.window {
-  max-width: 920px;
-  margin: 20px auto;
-  background: var(--window);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  box-shadow: var(--shadow);
-  overflow: hidden;
-}
-
-.titlebar {
-  display: flex;
-  align-items: center;
-  padding: 9px 10px;
-  background: #dcdcdc;
-  margin: auto;
-  font-weight: bold;
-}
-
-.traffic-lights .dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 58%;
-  display: inline-block;
-}
-.dot.red { background: #ff5f57; }
-.dot.yellow { background: #ffbd2e; }
-.dot.green { background: #28c840; }
-
-.nav {
-  background: var(--nav-bg);
-  padding: 8px 14px;
-  font-size: 15px;
-}
-.nav a {
-  color: var(--nav-text);
-  text-decoration: none;
-  margin-right: 8px;
-}
-
-.hero {
-  position: relative;
-  height: 220px;
-}
-.hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.prefs div, .thumb-strip, .social {
-  background: var(--card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 10px;
-}
-
-.prefs {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-.box-like { background: var(--like-bg); }
-.box-warn { background: var(--warn-bg); }
-
-.thumb-strip {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 8px;
-}
-.thumb {
-  width: 100%;
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-.social a {
-  color: var(--accent);
-  margin-right: 10px;
-}
-
-.footer-note {
-  text-align: center;
-  font-size: 12px;
-  color: #666;
-  padding: 10px;
-}
-
-/* Container sizing */
-.profile-wrapper {
-  width: 650px; /* Adjust based on your layout width */
-  background: white;
-  border: 1px solid #ccc;
-  font-family: Arial, sans-serif;
-}
-
-/* Yellow Highlighted Area: Search Bar */
-.header-search-bar {
-  padding: 10px;
-  background-color: transparent; /* Or a light yellow if preferred */
-  display: flex;
-  justify-content: flex-start;
-}
-
-.search-container {
-  display: flex;
-  gap: 2px;
-}
-
-.search-container input {
-  border: 1px solid #777;
-  padding: 2px 5px;
-  font-size: 12px;
-}
-
-.search-container button {
-  border: 1px solid #777;
-  background: #eee;
-  font-size: 12px;
-  cursor: pointer;
-}
-
-/* Layout for Red Boxes */
-.main-content {
-  display: flex;
-  padding: 10px;
-  gap: 15px;
-}
-
-/* Left Column (Icon + Fan Text) */
-.left-column {
-  flex: 0 0 160px;
-}
-
-.icon-container {
-  width: 100%;
-  height: 100px; /* Adjust to fit your icon shape */
-  background: black;
-  border: 1px solid #ccc;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8px;
-}
-
-.icon-container img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.fan-box {
-  font-size: 13px;
-  line-height: 1.3;
-}
-
-/* Right Column (Stacked Scrollboxes) */
-.right-column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.scroll-box {
-  border: 2px solid #cfcfcf; /* Red border as per your drawing */
-  border-radius: 4px;
-  padding: 10px;
+/* =========================================
+   FONT + BASE
+   - Using a compact sans stack for the look
+   ========================================= */
+html, body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; /* exact-feel compact sans */
   font-size: 14px;
-  background: white;
-  overflow-y: scroll;
+  color: #222;
+  background: #000; /* fallback while bg loads */
+  height: 100%;
+  margin: 0;
+  line-height: 1.45;
 }
 
-/* Fixed heights to trigger the scrollbar */
-.bio-box {
-  height: 90px;
+/* =========================================
+   PAGE BACKGROUND (classroom image)
+   - Replace URL if you have your own image
+   ========================================= */
+.page-bg {
+  position: fixed;
+  inset: 0;
+  background: url('https://i.imgur.com/wbqQwzD.jpeg') center/cover no-repeat;
+  z-index: -1; /* keep behind everything */
 }
 
-.extra-box {
-  height: 90px;
+/* =========================================
+   CENTERED WHITE PANEL
+   - matches the card-like panel in the image
+   ========================================= */
+.panel {
+  max-width: 760px;              /* similar width to reference */
+  margin: 24px auto;
+  background: #fff;
+  border: 1px solid #cfcfcf;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
 }
 
-/* Custom thin scrollbar */
-.scroll-box::-webkit-scrollbar {
-  width: 6px;
+/* Two-column grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: 240px 1fr; /* left narrow + right wide */
+  gap: 0;                           /* tight seams like the screenshot */
 }
 
-.scroll-box::-webkit-scrollbar-thumb {
-  background: #ccc;
-  border-radius: 10px;
+/* Column wrappers (stack boxes top-to-bottom) */
+.left-col, .right-col {
+  display: grid;
+  gap: 0;
+}
+
+/* =========================================
+   GENERIC BOX (SCROLL CONTAINER)
+   - all content tiles scroll when overflow
+   ========================================= */
+.box {
+  background: #ffffff;
+  border-bottom: 1px solid #d9d9d9;      /* thin separators between boxes */
+  padding: 10px;
+  max-height: 220px;                      /* SCROLL HEIGHT CAP */
+  overflow: auto;                         /* makes it a scroll box */
+}
+
+/* Remove the bottom border on last box in each column */
+.left-col .box:last-child,
+.right-col .box:last-child {
+  border-bottom: none;
+}
+
+/* =========================================
+   LEFT: AVATAR + LINKS
+   ========================================= */
+.avatar-box {
+  display: grid;
+  place-items: center;
+  max-height: 240px; /* slightly taller top tile like the reference */
+}
+.avatar-box img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #bbb;
+}
+
+/* Sticker-style link list */
+.links-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.links-box li {
+  padding: 6px 4px;
+  border: 1px solid #cdd9cd;
+  background: #eef7ee;    /* soft green tag background */
+  margin: 6px 0;
+  line-height: 1.35;
+}
+.links-box li strong {
+  color: #0a7a30;         /* green emphasis text */
+}
+
+/* =========================================
+   RIGHT: TEXT BOXES
+   ========================================= */
+.intro-box h1 {
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0 0 8px;
+  font-weight: bold;
+}
+.box p {
+  margin: 8px 0;
+}
+
+/* =========================================
+   RESPONSIVE TWEAKS
+   ========================================= */
+@media (max-width: 820px) {
+  .panel { margin: 12px auto; }
+}
+@media (max-width: 680px) {
+  .grid {
+    grid-template-columns: 1fr; /* stack columns on small screens */
+  }
+  .box { max-height: 200px; }   /* keep scroll contained on mobile */
 }
