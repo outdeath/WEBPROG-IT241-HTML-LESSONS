@@ -128,7 +128,7 @@ html, body {
 
 /* ================= GALLERY (PINK AREA) ================= */
 .gallery-box {
-  max-height: 240px;
+  max-height: 200px;
   overflow: hidden;
 }
 
@@ -229,4 +229,44 @@ html, body {
   .gallery-track img {
     width: 140px;
   }
+}
+
+/* ===== GALLERY ARROWS & SCROLL ===== */
+.gallery-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.gallery-track {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.gallery-track::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-track img {
+  width: 180px;
+  flex-shrink: 0;
+  border: 1px solid #ccc;
+}
+
+.gallery-btn {
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* ===== GUESTBOOK ENTRIES ===== */
+.guest-entry {
+  border-top: 1px dashed #ccc;
+  padding: 4px 0;
+  font-size: 13px;
 }

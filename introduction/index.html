@@ -20,20 +20,19 @@
 
       <div class="box links-box">
         <ul>
-          <li><strong><a href="#">instagram</a></strong></li>
-          <li><strong><a href="#">twitter</a></strong></li>
-          <li><strong><a href="#">github</a></strong></li>
-          <li><strong><a href="#">spotify</a></strong></li>
+          <li><strong><a href="https://instagram.com/9ravesites">instagram</a></strong></li>
+          <li><strong><a href="https://x.com/fawnfacts">twitter</a></strong></li>
+          <li><strong><a href="https://github.com/outdeath">github</a></strong></li>
+          <li><strong><a href="https://open.spotify.com/user/ezyhmnapdzi51b3vj8h9nkrmv?si=355dfb7f9dd64030">spotify</a></strong></li>
         </ul>
       </div>
 
-      <!-- STAMPS (RED AREA) -->
       <div class="box stamps-box">
         <div class="stamp-grid">
-          <img src="https://pix.crd.co/assets/images/gallery14/c75b76f4.png">
-          <img src="https://pix.crd.co/assets/images/gallery14/889c9e75.png">
-          <img src="https://pix.crd.co/assets/images/gallery14/f28ab42a.gif">
-          <img src="https://supplies.ju.mp/assets/images/gallery01/0383b620.png">
+          <img src="https://pix.crd.co/assets/images/gallery14/c75b76f4.png?v=c10c78ee">
+          <img src="https://pix.crd.co/assets/images/gallery14/889c9e75.png?v=c10c78ee">
+          <img src="https://pix.crd.co/assets/images/gallery14/f28ab42a.gif?v=c10c78ee">
+          <img src="https://supplies.ju.mp/assets/images/gallery01/0383b620.png?v=1c1ba870">
         </div>
       </div>
 
@@ -41,23 +40,26 @@
 
     <!-- RIGHT COLUMN -->
     <div class="right-col">
-      <div class="box intro-box">...</div>
-      <div class="box interests-box">...</div>
-      <div class="box contact-box">...</div>
-    </div>
 
+      <div class="box intro-box">…</div>
+      <div class="box interests-box">…</div>
+      <div class="box contact-box">…</div>
+
+    </div>
   </section>
 
-  <!-- ================= GALLERY (PINK AREA) ================= -->
+  <!-- ================= GALLERY (PINK BOX AREA) ================= -->
   <section class="box gallery-box">
     <h3>Gallery</h3>
 
-    <!-- GALLERY WRAPPER -->
+    <!-- GALLERY WRAPPER START -->
     <div class="gallery-wrapper">
+      <!-- LEFT ARROW -->
       <button class="gallery-btn left" onclick="scrollGallery(-1)">&#10094;</button>
 
+      <!-- SCROLLABLE TRACK -->
       <div class="gallery-track" id="galleryTrack">
-        <!-- ADD / REMOVE IMAGES FREELY -->
+        <!-- YOUR ORIGINAL IMAGES (UNCHANGED) -->
         <img src="https://files.catbox.moe/z51k27.png" alt="me and bashang">
         <img src="https://files.catbox.moe/hp0p3w.png" alt="stinkys">
         <img src="https://files.catbox.moe/k79avg.png" alt="DEER">
@@ -65,28 +67,32 @@
         <img src="https://files.catbox.moe/fyddc4.png" alt="gian">
       </div>
 
+      <!-- RIGHT ARROW -->
       <button class="gallery-btn right" onclick="scrollGallery(1)">&#10095;</button>
     </div>
+    <!-- GALLERY WRAPPER END -->
   </section>
 
-  <!-- ================= GUESTBOOK (BLUE AREA) ================= -->
+  <!-- ================= GUESTBOOK (BLUE BOX AREA) ================= -->
   <section class="box guestbook-box">
     <h3>Guestbook</h3>
 
+    <!-- GUESTBOOK FORM -->
     <form id="guestbookForm" class="guestbook-form">
       <input type="text" id="guestName" placeholder="Name (optional)">
       <textarea id="guestMessage" placeholder="Leave a message!" required></textarea>
       <button type="submit">Post</button>
     </form>
 
+    <!-- GUESTBOOK ENTRIES -->
     <div id="guestbookEntries" class="guestbook-entries"></div>
   </section>
 
 </main>
 
-<!-- ================= JAVASCRIPT ================= -->
+<!-- ================= JAVASCRIPT (ADD BEFORE </body>) ================= -->
 <script>
-/* ---------- GUESTBOOK (localStorage) ---------- */
+/* -------- GUESTBOOK (LOCAL STORAGE) -------- */
 const form = document.getElementById("guestbookForm");
 const entriesDiv = document.getElementById("guestbookEntries");
 
@@ -96,31 +102,35 @@ function loadEntries() {
   entries.forEach(entry => {
     const div = document.createElement("div");
     div.className = "guest-entry";
-    div.innerHTML = `<strong>${entry.name}</strong>: ${entry.message}`;
+    div.innerHTML = "<strong>" + entry.name + "</strong>: " + entry.message;
     entriesDiv.prepend(div);
   });
 }
 
-form.addEventListener("submit", e => {
+form.addEventListener("submit", function (e) {
   e.preventDefault();
+
   const name = document.getElementById("guestName").value || "Anonymous";
   const message = document.getElementById("guestMessage").value;
 
   const entries = JSON.parse(localStorage.getItem("guestbook")) || [];
-  entries.push({ name, message });
-  localStorage.setItem("guestbook", JSON.stringify(entries));
+  entries.push({ name: name, message: message });
 
+  localStorage.setItem("guestbook", JSON.stringify(entries));
   form.reset();
   loadEntries();
 });
 
 loadEntries();
 
-/* ---------- GALLERY SCROLL ---------- */
+/* -------- GALLERY ARROW SCROLL -------- */
 function scrollGallery(direction) {
   const track = document.getElementById("galleryTrack");
   const scrollAmount = track.clientWidth * 0.6;
-  track.scrollBy({ left: direction * scrollAmount, behavior: "smooth" });
+  track.scrollBy({
+    left: direction * scrollAmount,
+    behavior: "smooth"
+  });
 }
 </script>
 
